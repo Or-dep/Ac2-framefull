@@ -1,28 +1,28 @@
 import React from 'react';
 import {Routes, Route, Link} from 'react-router-dom';
-import ColorR from './components/ColorR';
-import ColorG from './components/ColorG';
-import ColorB from './components/ColorB';
+import CardVerde from './components/CardVerde';
+import CardAmarelo from './components/CardAmarelo';
+import CardAzul from './components/CardAzul';
 
 function App() {
   return (
     <>
       <header>
         <div clas="btn-nav">
-          <Link to='/ColorR'>ColorR</Link>
+          <Link to='/CardVerde'>CardVerde</Link>
         </div>
         <div clas="btn-nav">
-          <Link to='/ColorG'>ColorG</Link>
+          <Link to='/CardAmarelo'>CardAmarelo</Link>
         </div>
         <div clas="btn-nav">
-          <Link to='/ColorB'>ColorB</Link>
+          <Link to='/CardAzul'>CardAzul</Link>
         </div>
       </header>
       <main>
         <Routes>
-          <Route path='/colorR' element= {<ColorR/>}/>
-          <Route path='/colorG' element= {<ColorG/>}/>
-          <Route path='/colorB' element= {<ColorB/>}/>
+          <Route path='/CardVerde' element= {<CardVerde/>}/>
+          <Route path='/CardAmarelo' element= {<CardAmarelo/>}/>
+          <Route path='/CardAzul' element= {<CardAzul/>}/>
         </Routes>
       </main>
     </>
